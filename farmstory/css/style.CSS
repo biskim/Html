@@ -200,10 +200,37 @@ main > .info {
 }
 
 main > .info > div {
+    position: relative;
     float: left;
     height: 100%;
 }
+
+main > .info > div > img {
+    margin-bottom: 10px;
+}
 main > .info > div:nth-child(1) {width: 386px;}
+
+main > .info > div:nth-child(1) > article {
+    border: 1px solid blue;
+    overflow: hidden;
+    
+}
+
+main > .info > div:nth-child(1) > article > * {
+    float: left;
+}
+main > .info > div:nth-child(1) > article > img:nth-child(1) {
+    margin-right: 10px;
+}
+main > .info > div:nth-child(1) > article > img:nth-child(2) {
+    margin-right: 15px;
+}
+main > .info > div:nth-child(1) > article > table tr > td {
+    line-height: 13px;
+  
+    font-size: 11px;
+} 
+
 main > .info > div:nth-child(2) {
     width: 230px; 
     border-left: 1px solid #d7d7d7;
